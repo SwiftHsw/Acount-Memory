@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="YCHomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="矩形 9" translatesAutoresizingMaskIntoConstraints="NO" id="hDV-rd-WM0">
+                        <rect key="frame" x="15" y="0.0" width="315" height="160"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题：宽带" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chN-G5-FjO">
+                        <rect key="frame" x="25" y="15" width="130" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8K4-zK-8yj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建时间：2020-6-15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbe-n2-GFD">
+                        <rect key="frame" x="25" y="56" width="285" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="vnj-mO-gAC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标签：宽带" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCL-R0-Wfw">
+                        <rect key="frame" x="170" y="15" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="FGq-3a-4Bc"/>
+                            <constraint firstAttribute="width" constant="150" id="Hqh-Hq-dnJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTz-NW-In9">
+                        <rect key="frame" x="180" y="99" width="140" height="45"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="lTv-t5-4fv"/>
+                        </constraints>
+                        <state key="normal" title="Copy password">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="copyPassAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NHp-Sy-hvB"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2C-rt-QAF">
+                        <rect key="frame" x="25" y="99" width="140" height="45"/>
+                        <color key="backgroundColor" red="0.2784313725" green="0.52941176469999995" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="mo0-9h-Mm1"/>
+                        </constraints>
+                        <state key="normal" title="Copy account">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="copyAcount:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gZi-9K-DIM"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="PTz-NW-In9" firstAttribute="width" secondItem="k2C-rt-QAF" secondAttribute="width" id="3ZW-wR-DSX"/>
+                    <constraint firstAttribute="bottom" secondItem="hDV-rd-WM0" secondAttribute="bottom" id="FAL-7y-POh"/>
+                    <constraint firstItem="nbe-n2-GFD" firstAttribute="leading" secondItem="chN-G5-FjO" secondAttribute="leading" id="HRc-YO-yQo"/>
+                    <constraint firstItem="hDV-rd-WM0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HeF-W8-60S"/>
+                    <constraint firstItem="nbe-n2-GFD" firstAttribute="top" secondItem="chN-G5-FjO" secondAttribute="bottom" constant="20" id="QZC-1U-Bbg"/>
+                    <constraint firstItem="cCL-R0-Wfw" firstAttribute="leading" secondItem="chN-G5-FjO" secondAttribute="trailing" constant="15" id="Rbh-QP-TNz"/>
+                    <constraint firstItem="PTz-NW-In9" firstAttribute="leading" secondItem="k2C-rt-QAF" secondAttribute="trailing" constant="15" id="VER-Kg-4U8"/>
+                    <constraint firstItem="chN-G5-FjO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Vnk-yb-egy"/>
+                    <constraint firstItem="k2C-rt-QAF" firstAttribute="leading" secondItem="nbe-n2-GFD" secondAttribute="leading" id="Z3Y-2f-RDe"/>
+                    <constraint firstItem="chN-G5-FjO" firstAttribute="centerY" secondItem="cCL-R0-Wfw" secondAttribute="centerY" id="dZi-dJ-LzL"/>
+                    <constraint firstItem="PTz-NW-In9" firstAttribute="trailing" secondItem="cCL-R0-Wfw" secondAttribute="trailing" id="f7l-Yv-ASJ"/>
+                    <constraint firstAttribute="trailing" secondItem="cCL-R0-Wfw" secondAttribute="trailing" constant="25" id="fFi-f1-R3F"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="k2C-rt-QAF" secondAttribute="bottom" constant="5" id="hHm-nq-d7s"/>
+                    <constraint firstItem="PTz-NW-In9" firstAttribute="top" secondItem="k2C-rt-QAF" secondAttribute="top" id="lhB-Xs-5Wv"/>
+                    <constraint firstAttribute="trailing" secondItem="hDV-rd-WM0" secondAttribute="trailing" constant="15" id="pzO-Z5-4Bx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nbe-n2-GFD" secondAttribute="trailing" constant="15" id="qSH-GE-zQJ"/>
+                    <constraint firstItem="hDV-rd-WM0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="wQi-JF-E4N"/>
+                    <constraint firstItem="cCL-R0-Wfw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="xoa-lN-BKr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="acountButton" destination="k2C-rt-QAF" id="Blr-x8-KkV"/>
+                <outlet property="creatTime" destination="nbe-n2-GFD" id="tib-9k-A6X"/>
+                <outlet property="passButton" destination="PTz-NW-In9" id="fWf-RR-YDv"/>
+                <outlet property="tagName" destination="cCL-R0-Wfw" id="DrB-Zq-ESh"/>
+                <outlet property="titleName" destination="chN-G5-FjO" id="kWh-dA-SWb"/>
+            </connections>
+            <point key="canvasLocation" x="216.66666666666669" y="133.92857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="矩形 9" width="345" height="50"/>
+    </resources>
+</document>
